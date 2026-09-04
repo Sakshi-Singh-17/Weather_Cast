@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Cast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <h1>Weather-Cast</h1>
+            <div class="input-form">
+                <div class="text-input" id="text-input">
+                    <label for="enter-input">City</label>
+                    <input type="text" id="enter-input" class="enter-input" placeholder ="Enter city name">
+                </div>
+                <div class="button" id="button">
+                    <button>Search</button>
+                </div>
+            </div>
+            <div class="output">
+                <div class="icon">
+                    <img id="weather-icon" src="" alt="Weather icon">
+                </div>
+                <div class="temp" id="temp"></div>
+                <div class="moisture" id="moisture"></div>
+                <div class="weather" id="weather"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

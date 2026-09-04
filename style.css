@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2F39A9;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.outer {
+    width: 50vh;
+    min-height: 50vh;
+    background-color: #FFFFFF;
+    border: 4px solid #2E6FA0;
+    padding: 30px;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #14254e;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.text-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+label {
+    font-size: 20px;
+    color: #000000;
+    white-space: nowrap;
+}
+
+.enter-input {
+    width: 100%;
+    height: 32px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.button button {
+    background-color: #2563EB;
+    color: #FFFFFF;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 3px 5px;
+}
+
+.output {
+    width: 100%;
+    margin-top: 20px;
+    color: #053d46;
+    font-size: 20px;
+}
+
+#weather-icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.temp,
+.moisture,
+.weather {
+    margin-bottom: 8px;
+}
+
+
+@media (max-width: 768px) {
+
+    .outer {
+        width: 80%;
+        min-height: 400px;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .outer {
+        width: 100%;
+        min-height: 380px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .text-input {
+        width: 100%;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    .enter-input {
+        font-size: 16px;
+    }
+
+    .button button {
+        font-size: 16px;
+    }
+
+    .output {
+        font-size: 16px;
+    }
+
+    #weather-icon {
+        width: 35%;
+    }
+}
